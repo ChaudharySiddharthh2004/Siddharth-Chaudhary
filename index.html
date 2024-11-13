@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siddharth Portfolio</title>
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #222; /* Dark background for better contrast */
+        }
+
+        #universal-card {
+            text-align: center;
+            margin: 20px;
+        }
+
+        #namecard img {
+            width: 150px; /* Responsive image size */
+            border-radius: 20%; /* Circular image */
+            height: 80px;
+        }
+        #namecard h2 p{
+            font-size: 30px;
+            color: white;
+        }
+
+        #main_div {
+            text-align: center;
+            color:black;
+            margin: 20px;
+        }
+
+        #headingcontainer {
+            text-align: center;
+            margin: 20px;
+            color:rgba(255, 255, 255, 0.633);
+        }
+
+        #cardcontainer {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+            margin: 20px;
+        }
+
+        #card1, #card2, #card3 {
+            background-color: #444; /* Card background color */
+            color: white;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            flex: 1 1 200px; /* Flex-grow, flex-shrink, flex-basis */
+        }
+        #card1:hover
+      {
+     /* background-color: #339933a6;  */
+     transform: scale(1.1); 
+      } 
+       #card2:hover
+     {
+    /* background-color: #339933a6; */
+    transform: scale(1.1);
+     }
+      #card3:hover
+     {
+    /* background-color: #339933a6; */
+    transform: scale(1.1);
+    }
+
+        .languages {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .languages i {
+            font-size: 70px;
+            margin: 10px;
+            color: white;
+        }
+
+        .footer {
+            height: 200px; /* Set the height of the container */
+            width: 100%; /* Make it responsive */
+            overflow-y: scroll; /* Enable vertical scrolling */
+            padding: 10px; /* Optional padding */
+            background-color:transparent; /* Background color for contrast */
+        }
+
+        .footer i{
+            margin-right: 15px;
+            color: white;
+        }
+       
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            #cardcontainer {
+                flex-direction: column; /* Stack cards vertically on small screens */
+                align-items: center; /* Center align cards */
+            }
+
+            #namecard img {
+                width: 100px; /* Smaller image size for mobile */
+            }
+            #namecard h2{
+                font-size: 40px;
+                color:rgba(255, 255, 255, 0.633);
+            }
+            .footer {
+                height: 20px; /* Adjust height for mobile */
+            }
+
+            .footer i{
+                font-size: 29px; /* Smaller font size for mobile */
+            }
+
+            .scroll-content h2 {
+                font-size: 24px; /* Smaller font size for mobile */
+            }
+
+            .languages i {
+                font-size: 35px; /* Smaller icon size for mobile */
+            }
+            .languages i:hover {
+    transform: scale(1.2);
+}
+.languages .fa-html5 {
+    color: #e34f26;
+}
+.languages .fa-css3-alt {
+    color: #1572b6;
+}
+.languages .fa-js {
+    color: #f7df1e;
+}
+.languages .fa-react {
+    color: #61dafb;
+}
+.languages .fa-node-js {
+    color: #339933;
+}
+.languages .fa-python {
+    color: #3776ab;
+}
+.languages .fa-java {
+    color: #007396;
+}
+.languages .fa-php {
+    color: #777bb4;
+}
+.languages .fa-SQL {
+    color: white;
+}
+        }
+
+        @media (max-width: 480px) {
+            #main_div h1 {
+                font-size: 30px; /* Smaller font size for mobile */
+            }
+
+            #main_div h2 {
+                font-size: 30px; /* Smaller font size for mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="universal-card">
+        <div id="namecard">
+            <img src="siddharth beta.jpg" alt="Siddharth image">
+            <h2>SIDDHARTH</h2>
+            <center><h2>Software Engineer in Qura</h2></center>
+        </div>
+    </div>
+    <div id="main_div">
+        <div id="child_div">
+            <p>Passionate about creating intuitive user experiences. Specialize in transforming ideas into beautifully crafted products.</p>
+        </div>
+    </div>
+    <div id="headingcontainer">
+        <div id="headings">
+            <h1>Project</h1>
+            <h1>Framework</h1>
+        </div>
+    </div>
+    <div id="cardcontainer">
+        <div id="card1">
+            <img src="images-removebg-preview.png" height="120px" alt="">
+            <h3>Car Website</h3>
+        </div>
+        <div id="card2">
+            <img src="pngwing.com.png" height="125px" width="200px" alt="">
+            <h3>E-commerce Website</h3>
+        </div>
+        <div id="card3">
+            <img src="logo_2-removebg-preview.png" height="50px" width="120px" alt="">
+            <h3>Ticket Booking Website</h3>
+        </div>
+    </div>
+    <div class="languages">
+        <i class="fab fa-html5" title="HTML5"></i>
+        <i class="fab fa-css3-alt" title="CSS3"></i>
+        <i class="fab fa-js" title="JavaScript"></i>
+        <i class="fab fa-react" title="React"></i>
+        <i class="fab fa-node-js" title="Node.js"></i>
+        <i class="fab fa-python" title="Python"></i>
+        <i class="fab fa-java" title="Java"></i>
+        <i class="fab fa-php" title="PHP"></i>
+    </div>
+   <div class="footer"><center>
+   <a href="https://www.instagram.com/chaudhary_siddharthh/profilecard/?igsh=ZWVjaXFhdnJsMDlr"><i class="fab fa-instagram" title="Instagram"></i> </a>
+   <a href="https://www.linkedin.com/in/siddharth-chaudhary-6505a4300?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "><i class="fab fa-linkedin" title="LinkedIn"></i> <a>
+    <a href="https://github.com/ChaudharySiddharthh2004"><i class="fab fa-github" title="GitHub"></i></a>
+   </div></center>
+</body>
+</html>
